@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index Urls</title>
+    <link rel="stylesheet" href="css/indexlinks.css">
+    <style>
+        .w1 {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Helpful links</h1>
+    <nav>
+        <ul>
+            <li id="win">
+                Activate Windows Permanently <br>
+                <span id="win1" class="w1">
+                    Open PowerShell in admin mode then use the command to activate Windows:<br>
+                    <span class="w2" id="activateCmd">irm https://get.activated.win | iex</span>
+                    <button id="copyBtn" style="margin-left:10px;">Copy</button>
+                    <script>
+                        document.getElementById('copyBtn').addEventListener('click', function() {
+                            const cmd = document.getElementById('activateCmd').innerText;
+                            navigator.clipboard.writeText(cmd);
+                        });
+                    </script>
+                </span>
+            </li>
+            <li><a href="https://photext.shop/">Edit Text from Image</a></li>
+            <li><a href="https://chatgptfree.ai/">Unlimited Chat GPT</a></li>
+            <li><a href="https://www.10015.io/">All Tools in One Place</a></li>
+            <li><a href="https://remove.photos/">Image Editing Softwares</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const win = document.getElementById("win");
+            const win1 = document.getElementById("win1");
+
+            win.addEventListener("click", function() {
+                win1.classList.toggle("w1");
+            });
+        });
+    </script>
+</body>
+</html>

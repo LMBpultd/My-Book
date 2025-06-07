@@ -1,0 +1,41 @@
+body {
+    background-color: lemonchiffon;
+    font-family: Georgia, serif;
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+li {
+    list-style-type: decimal;
+    padding-left: 0;
+    font-size: 20px;
+    margin-bottom: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#win{
+    font-size: 20px;
+    text-align: justify;
+    width: 73%;
+}
+
+.w1 {
+    color: darkblue;
+}
+.w2 {
+    color: darkred;
+    font-style: italic;
+    font-size: 21px;
+}
+
+h1{
+    margin-left:15px;
+font-size: 46px;
+
+}
+
