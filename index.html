@@ -3,12 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Index Urls</title>
-    <link rel="stylesheet" href="css/indexlinks.css">
-    <style>
-        .w1 {
-            display: none;
-        }
-    </style>
+    <link rel="stylesheet" href="css/index.css">
+    
 </head>
 <body>
     <h1>Helpful links</h1>
@@ -26,7 +22,22 @@
                             navigator.clipboard.writeText(cmd);
                         });
                     </script>
+
                 </span>
+
+                <div id="copyPopup">
+                    Copied to clipboard!
+                </div>
+                <script>
+                    document.getElementById('copyBtn').addEventListener('click', function() {
+                        const popup = document.getElementById('copyPopup');
+                        popup.style.display = 'block';
+                        setTimeout(() => {
+                            popup.style.display = 'none';
+                        }, 1500);
+                    });
+                </script>
+
             </li>
             <li><a href="https://photext.shop/">Edit Text from Image</a></li>
             <li><a href="https://chatgptfree.ai/">Unlimited Chat GPT</a></li>
